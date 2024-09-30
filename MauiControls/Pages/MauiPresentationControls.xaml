@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiControls.Pages.MauiPresentationControls"
+                     Title="Maui Presentation Controls">
+    <ScrollView>
+        <VerticalStackLayout Padding="10" Spacing="15">
+            <BoxView Color="CornflowerBlue"
+                     CornerRadius="20"
+                     WidthRequest="200"
+                     HeightRequest="200"
+                     VerticalOptions="Center"
+                     HorizontalOptions="Start"
+                     BackgroundColor="Transparent"/>
+            <Label Text="Welcome &#10; to .Net Maui"
+                   CharacterSpacing="1"
+                   BackgroundColor="Yellow"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"/>
+            <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                   incididunt ut labore et dolore magna aliqua. "
+                   FontSize="Medium"
+                   LineHeight=".8"
+                   MaxLines="4"
+                   TextType="Html"/>
+            <Label Text="Underlined text"
+                   FontSize="Large"
+                   TextDecorations="Underline"/>
+            <Label Text="Underlined text"
+                   FontSize="Large"
+                   TextDecorations="Strikethrough"/>
+            <Label Text="Underlined text"
+                   FontSize="Large"
+                   TextDecorations="Underline, Strikethrough"/>
+            <Label Text="Uppercase text"
+                   FontSize="Large"
+                   TextTransform="Uppercase"/>
+            <Label Text="Lowercase text"
+                   FontSize="Large"
+                   TextTransform="Lowercase"/>
+            <Ellipse Fill="Yellow"
+                     Stroke="Blue"
+                     StrokeThickness="10"
+                     HeightRequest="100"
+                     WidthRequest="150"
+                     HorizontalOptions="Center"/>
+            <Line Stroke="White"
+                  X1="0"
+                  Y1="0"
+                  X2="300"
+                  Y2="50"
+                  StrokeThickness="5"/>
+            <Rectangle Fill="Green"
+                       Stroke="White"
+                       StrokeThickness="5"
+                       HeightRequest="150"
+                       WidthRequest="150"
+                       HorizontalOptions="End"
+                       RadiusX="50"
+                       RadiusY="50"/>
+            <Polygon Points="40,10 70,80 10,50"
+                     Fill="LightBlue"
+                     Stroke="DarkBlue"
+                     StrokeThickness="5"/>
+            <Polyline Points="0,0 10,30 15,0 18,60 23,30 35,30 40,0 43,60 48,30 100,30"
+                      Stroke="Red"/>
+            <Path Data="M 10,100 L 100,100 100, 50Z"
+                  Aspect="Uniform"
+                  HorizontalOptions="Center"
+                  Stroke="White"/>
+            <Border Stroke="#C49B33"
+                    StrokeThickness="4"
+                    StrokeShape="RoundRectangle 40,0,0,40"
+                    Background="#2B0B98"
+                    Padding="16,8"
+                    HorizontalOptions="Center">
+                <Label Text="Welcome to .Net Maui"
+                       TextColor="White"
+                       FontSize="18"
+                       FontAttributes="Bold"/>
+            </Border>
+            <Image Source="dotnet_bot.png"
+                   Aspect="AspectFit"/>
+            <Image Source="https://c0.klipartz.com/pngpicture/168/626/gratis-png-hijo-de-gohan-gohan-goku-troncos-vegeta-bulma-dragon-ball-z-thumbnail.png"
+                   Aspect="AspectFit"
+                   HeightRequest="100"
+                   WidthRequest="100"/>
+            <Image Source="https://media1.tenor.com/m/7HUogy7rXs4AAAAC/feel-me-think-about-it.gif"
+                   Aspect="AspectFit"
+                   HeightRequest="100"
+                   WidthRequest="100"
+                   IsAnimationPlaying="True"/>
+            <Frame CornerRadius="200">
+                <Image Source="dotnet_bot.png"/>
+            </Frame>
+            <Frame BorderColor="Gray"
+                   CornerRadius="10"
+                   Padding="8">
+                <StackLayout>
+                    <Label Text="Card example"
+                           FontSize="30"
+                           FontAttributes="Bold"
+                           TextColor="Black"/>
+                    <BoxView Color="Gray"
+                             HeightRequest="2"
+                             HorizontalOptions="Fill"/>
+                    <Label Text="Using Frame and StackLayout"
+                           FontSize="20"
+                           TextColor="Black"/>
+                </StackLayout>
+            </Frame>
+            <WebView HeightRequest="500"
+                     Source="https://macoratti.net"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
