@@ -3,6 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppDemo.AbsoluteLayoutDemo"
             Title="Absolute Layout Demo">
-    
-   
+
+    <AbsoluteLayout>
+        <BoxView Color="Red" 
+              AbsoluteLayout.LayoutBounds="0.1, 0.1, 0.3, 0.3" 
+              AbsoluteLayout.LayoutFlags="All"/>
+        <BoxView Color="Green" 
+              AbsoluteLayout.LayoutBounds="0.5, 0.5, 150, 150" 
+              AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        <BoxView Color="Blue" 
+              AbsoluteLayout.LayoutBounds="200, 100, 0.6, 100" 
+              AbsoluteLayout.LayoutFlags="WidthProportional"/>
+    </AbsoluteLayout>
 </ContentPage>
