@@ -73,6 +73,9 @@
 	  <MauiXaml Update="FlyoutPageDemo.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="GridLayoutDemo.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="MinhaPagina.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
