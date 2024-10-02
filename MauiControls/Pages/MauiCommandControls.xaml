@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiControls.Pages.MauiCommandControls"
+             Title="Maui Command Controls">
+
+    <VerticalStackLayout>
+        <Button Text="Click to rotate the text!"
+                Background="Green"
+                x:Name="btnDemo"
+                Clicked="btnDemo_Clicked"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"/>
+
+        <Label x:Name="lblDemo"
+               Text=".NET MAUI"
+               TextColor="Blue"
+               FontSize="25"
+               FontAttributes="Bold"
+               VerticalOptions="Center"
+               HorizontalOptions="Center" />
+
+        <Button Text="Click to rotate the text"
+          BackgroundColor="Green"
+          ImageSource="cellphone.png"
+          x:Name="btnDemo2"
+          VerticalOptions="Center"
+          HorizontalOptions="Center"
+          IsEnabled="False"
+          Clicked="btnDemo_Clicked"/>
+
+        <ImageButton Source="dotnet_bot.png"
+               x:Name="btnImageDemo"
+               Aspect="AspectFit"
+               BorderColor="Black"
+               Clicked="btnImageDemo_Clicked"
+               HeightRequest="200"
+               WidthRequest="200"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+
+        <StackLayout Padding="20"
+                RadioButtonGroup.GroupName="Pets2">
+            <Label Text="What's your favorite animal ?"
+              FontSize="Large" TextColor="Blue"/>
+            <RadioButton Content="Cat" Value="Cat" CheckedChanged="RadioButton_CheckedChanged"/>
+            <RadioButton Content="Dog" Value="Dog" CheckedChanged="RadioButton_CheckedChanged"/>
+            <RadioButton Content="Bird" Value="Bird" CheckedChanged="RadioButton_CheckedChanged"/>
+            <Label x:Name="lblPets2" Text=""/>
+        </StackLayout>
+
+        <StackLayout>
+            <SearchBar Placeholder="Search Product"
+                 SearchButtonPressed="SearchBar_SearchButtonPressed"
+                 BackgroundColor="Cyan"/>
+        </StackLayout>
+
+        <SwipeView Background="LightCyan">
+            <SwipeView.LeftItems>
+                <SwipeItems>
+                    <SwipeItem
+                              BackgroundColor="LightGreen"
+                              IconImageSource="dog.png"
+                              Invoked="SwipeItem_Invoked"
+                              Text="Dog"/>
+                    <SwipeItem
+                           BackgroundColor="LightPink"
+                           IconImageSource="cat.png"
+                           Invoked="SwipeItem_Invoked"
+                           Text="Cat"/> 
+                </SwipeItems>
+            </SwipeView.LeftItems>
+            <SwipeView.RightItems>
+                <SwipeItem
+                   BackgroundColor="LemonChiffon"
+                   IconImageSource="bird.png"
+                   Invoked="SwipeItem_Invoked"
+                   Text="Bird"/>
+            </SwipeView.RightItems>
+            <Grid BackgroundColor="LightGray"
+            HeightRequest="60"
+            WidthRequest="300">
+
+                <Label HorizontalOptions="Center"
+                   Text="&lt;== Slide ==>"
+                   FontSize="Large"
+                   VerticalOptions="Center"/>
+            </Grid>
+        </SwipeView>
+
+    </VerticalStackLayout>
+
+</ContentPage>
