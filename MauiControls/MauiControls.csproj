@@ -61,6 +61,7 @@
 	  <None Remove="Resources\Images\cat.png" />
 	  <None Remove="Resources\Images\cellphone.png" />
 	  <None Remove="Resources\Images\dog.png" />
+	  <None Remove="Resources\Images\ic_menu.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -74,6 +75,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\MauiPresentationControls.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\MauiSetValueControls.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
