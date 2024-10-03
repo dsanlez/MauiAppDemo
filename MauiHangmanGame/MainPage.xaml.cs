@@ -1,8 +1,7 @@
-﻿using MauiDemoDataBinding.Models;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Diagnostics;
 
-namespace MauiDemoDataBinding
+namespace MauiHangmanGame
 {
     public partial class MainPage : ContentPage, INotifyPropertyChanged
     {
@@ -93,6 +92,7 @@ namespace MauiDemoDataBinding
             EscolherPalavra();
             CalcularPalavra(resposta, palpite);
         }
+
         #region Jogo
         private void EscolherPalavra()
         {
@@ -176,9 +176,9 @@ namespace MauiDemoDataBinding
             StatusJogo = $"Erros: {erros} de {maximoErros}";
         }
 
-
         #endregion
 
+        
         private void Button_Clicked(object sender, EventArgs e)
         {
             var btn = sender as Button;
@@ -201,7 +201,6 @@ namespace MauiDemoDataBinding
             AtualizaStatus();
             HabilitarLetras();
         }
-
     }
-    
+
 }
