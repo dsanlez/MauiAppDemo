@@ -61,7 +61,11 @@
 	  <None Remove="Resources\Images\cat.png" />
 	  <None Remove="Resources\Images\cellphone.png" />
 	  <None Remove="Resources\Images\dog.png" />
+	  <None Remove="Resources\Images\Galaxy.jpg" />
+	  <None Remove="Resources\Images\Galaxy2.jpg" />
+	  <None Remove="Resources\Images\Galaxy3.jpg" />
 	  <None Remove="Resources\Images\ic_menu.png" />
+	  <None Remove="Resources\Images\Milkyway.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -71,6 +75,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Pages\MauiCollectionControls.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\MauiCommandControls.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
